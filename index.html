@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios de Gimnasio</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Accesorios de Gimnasio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Los mejores accesorios para tu entrenamiento.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Images/colchoneta.jpg" alt="Colchoneta">
+                    <h3>Colchoneta</h3>
+                    <p>Estirate con comodidad</p>
+                </div>
+                <div class="card">
+                    <img src="Images/cuerda_saltar.jpg" alt="Cuerda de saltar">
+                    <h3>Cuerda de saltar</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="Images/mancuernas.jpg" alt="Mancuernas">
+                    <h3>Mancuernas</h3>
+                    <p>El peso lo elegis vos...</p>
+                </div>
+                <!-- Agrega más cards según sea necesario -->
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="review-grid">
+                <div class="review">
+                    <p>"Excelente calidad y servicio!" - Luis A</p>
+                </div>
+                <div class="review">
+                    <p>"Mis entrenamientos han mejorado mucho." - Fernando B</p>
+                </div>
+                <div class="review">
+                    <p>"Recomiendo estos productos a todos." - Gustavo C</p>
+                </div>
+                <div class="review">
+                    <p>"Los mejores accesorios que he probado." - Maria D</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="responsive-video">
+                <video controls>
+                    <source src="Videos/gimnasio.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/{tu_codigo_de_formulario}" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="mapa">
+            <div class="responsive-map">
+                <h2>Encuéntranos Aquí</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d37373.84734639226!2d-59.04732249293457!3d-34.11018507624255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b6a92357b4d%3A0x5f7d9ac7c145085d!2sZ%C3%A1rate%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1730674755050!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
