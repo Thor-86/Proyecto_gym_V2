@@ -57,17 +57,48 @@ main {
     border-radius: 5px;
 }
 
-.review-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+.carrito{
+
 }
 
-.review {
-    background: white;
+.metodoPago{
+    position: relative;
+}
+
+.btnAgrgarCarrito{
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+
+.metodoPago{
+    padding: 1rem;
+    size: 5px;
+}
+
+.review-grid {    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.review {    
+    height: 15re;
+    border: 1px solid purple;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 10px 5px 10px rgb(39, 14, 39);
+    background: rgb(158, 67, 151);
+    transition: all 0.3s ease-out;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: grid;
+    color: white;
+}
+
+.review:hover{
+    transform: translate(-15px);
 }
 
 section {
@@ -128,13 +159,26 @@ form button:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .card {
         flex: 1 1 100%; 
     }
 
     form {
         align-items: stretch;
+    }
+
+    form textarea, input{
+        display: block;
+        width: 90%;
+    }
+
+    section{
+        padding: 1.2rem;
+    }
+
+    section h2, h3{
+        font-size: 13px;
     }
 }
 

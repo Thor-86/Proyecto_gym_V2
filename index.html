@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Accesorios de Gimnasio</h1>
+        <h1>GymBro</h1>
         <nav>
             <ul>
                 <li><a href="#home">Inicio</a></li>
@@ -23,29 +23,32 @@
     <main>
         <section id="home">
             <h2>Bienvenido a nuestra tienda</h2>
-            <p>Los mejores accesorios para tu entrenamiento.</p>
+            <p>Los mejores accesorios para un mejor entrenamiento.</p>
         </section>
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="Images/colchoneta.jpg" alt="Colchoneta">
-                    <h3>Colchoneta</h3>
-                    <p>Estirate con comodidad</p>
-                </div>
-                <div class="card">
-                    <img src="Images/cuerda_saltar.jpg" alt="Cuerda de saltar">
-                    <h3>Cuerda de saltar</h3>
-                    <p></p>
-                </div>
-                <div class="card">
-                    <img src="Images/mancuernas.jpg" alt="Mancuernas">
-                    <h3>Mancuernas</h3>
-                    <p>El peso lo elegis vos...</p>
-                </div>
-                <!-- Agrega más cards según sea necesario -->
+            <div id="contenedorProductos" class="card-container">
+                <!-- Agrega según sea necesario -->
             </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Items</h2>
+            <ul>
+
+            </ul>
+            <p>Total a pagar: $0</p>
+            <input id="btnBorrar" type="button" value="Borrar">
+            <input id="btnIrAPagar" type="button" value="Ir a pagar">
+            <p id="mensaje"></p>
+        </section>
+
+        <section id="metodoPago">
+            <p>Medios de pago</p>
+            <img src="Images/visa@2x.png" alt="">
+            <img src="Images/amex@2x.png" alt="">
+            <img src="Images/mastercard@2x.png" alt="">
         </section>
 
         <section id="reseñas">
@@ -99,6 +102,7 @@
             </div>
         </section>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
 
